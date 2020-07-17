@@ -1,0 +1,15 @@
+# plugin specific config
+defaults: &defaults
+  twitter.num_accounts: 1
+  dummy: 1
+# Any default keys across dev/prod.
+
+production:
+  <<: *defaults
+
+development:
+  <<: *defaults
+  access_token: 
+  access_secret:
+  consumer_key:
+  consumer_secret: 
